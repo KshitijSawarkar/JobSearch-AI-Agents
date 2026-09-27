@@ -1,0 +1,105 @@
+{
+  "native_info": {
+    "name": "Kshitij Ashok Sawarkar",
+    "dob": "2002-11-03",
+    "tob": "04:30 AM",
+    "pob": "Tumsar, Bhandara, Maharashtra, India"
+  },
+  "core_chart": {
+    "rashi": "Virgo (Kanya)",
+    "lagna": "Virgo (Kanya)",
+    "ascendant": "Virgo",
+    "lagna_power": 21,
+    "special_conditions": ["Kaal Sarp Dosh"]
+  },
+  "planetary_positions": [
+    {
+      "house": 1,
+      "planets": [
+        {"planet": "Moon", "power": 19, "state": "Direct"},
+        {"planet": "Mars", "power": 17, "state": "Direct"}
+      ],
+      "significance": "High mental activity, ambition, dynamic execution, analytical mindset in self-expression."
+    },
+    {
+      "house": 2,
+      "planets": [
+        {"planet": "Sun", "power": 16, "state": "Debilitated"},
+        {"planet": "Mercury", "power": 9, "state": "Combust"},
+        {"planet": "Venus", "power": 12, "state": "Retrograde & Exalted"}
+      ],
+      "significance": "Wealth, resource generation, communication; exalted Venus brings aesthetic precision and high-value articulation despite combust Mercury."
+    },
+    {
+      "house": 3,
+      "planets": [
+        {"planet": "Ketu", "power": 16, "state": "Retrograde & Vargottama"},
+        {"planet": "Pluto", "power": 22, "state": "Direct"}
+      ],
+      "significance": "Intense technical curiosity, deep research capabilities, resilience in complex problem-solving."
+    },
+    {
+      "house": 5,
+      "planets": [
+        {"planet": "Neptune", "power": 14, "state": "Direct"}
+      ],
+      "significance": "Intuitive intellect, innovative vision, AI architecture ideation."
+    },
+    {
+      "house": 6,
+      "planets": [
+        {"planet": "Uranus", "power": 1, "state": "Retrograde"}
+      ],
+      "significance": "Disruptive troubleshooting, technical debugging."
+    },
+    {
+      "house": 9,
+      "planets": [
+        {"planet": "Rahu", "power": 16, "state": "Retrograde & Vargottama"}
+      ],
+      "significance": "Unconventional learning paths, affinity for cutting-edge technologies, global opportunities."
+    },
+    {
+      "house": 10,
+      "planets": [
+        {"planet": "Saturn", "power": 4, "state": "Retrograde"}
+      ],
+      "significance": "Career house (Karma bhava); requires structured systems, methodical rigor, long-term persistence in engineering."
+    },
+    {
+      "house": 11,
+      "planets": [
+        {"planet": "Jupiter", "power": 22, "state": "Exalted"}
+      ],
+      "significance": "Supreme house of gains (Labha bhava); exalted Jupiter (Power 22) guarantees massive expansion, impactful mentorship, network recognition, and high-yield collaborative outcomes."
+    }
+  ],
+  "planetary_powers_summary": {
+    "jupiter": 22,
+    "pluto": 22,
+    "lagna": 21,
+    "moon": 19,
+    "mars": 17,
+    "sun": 16,
+    "ketu": 16,
+    "rahu": 16,
+    "neptune": 14,
+    "venus": 12,
+    "mercury": 9,
+    "saturn": 4,
+    "uranus": 1
+  },
+  "alignment_heuristics": {
+    "career_strengths": [
+      "Data & Systems Architecture (Exalted Jupiter in 11th + Pluto in 3rd)",
+      "High-pressure problem solving and automation (Mars + Moon in Lagna)",
+      "Design precision and high-context LLM development (Exalted Venus in 2nd)"
+    ],
+    "ideal_domains": [
+      "AI/ML Engineering & Agentic Workflows",
+      "Cloud Infrastructure & Data Pipelines",
+      "Control, Instrumentation & Embedded Intelligence",
+      "Quantitative & Algorithmic Systems"
+    ]
+  }
+}

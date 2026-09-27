@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuraMatch AI | Autonomous Career & Job Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- TOP NAVBAR -->
+    <header class="navbar">
+      <div class="nav-brand">
+        <div class="logo-icon">🪐</div>
+        <div>
+          <h1>AuraMatch <span class="gradient-text">AI</span></h1>
+          <p class="subtitle">Multi-Agent Job Hunter & Astrological Resume Tailoring</p>
+        </div>
+      </div>
+      <div class="nav-stats" id="navStats">
+        <div class="stat-pill"><span class="label">Total Jobs:</span> <span class="val" id="statTotal">0</span></div>
+        <div class="stat-pill"><span class="label">High Match (80+):</span> <span class="val highlight" id="statHigh">0</span></div>
+        <div class="stat-pill"><span class="label">Applied:</span> <span class="val success" id="statApplied">0</span></div>
+      </div>
+      <div class="nav-actions">
+        <button id="btnRunPipeline" class="btn btn-primary" onclick="triggerRunPipeline()">
+          <span class="btn-icon">⚡</span> Run Daily Agents
+        </button>
+      </div>
+    </header>
+
+    <!-- FILTER & SEARCH BAR -->
+    <section class="controls-bar">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search by job title, company, or keyword..." oninput="renderJobs()" />
+      </div>
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all" onclick="setFilter('all')">All Jobs</button>
+        <button class="filter-btn" data-filter="high" onclick="setFilter('high')">🔥 70+ Score</button>
+        <button class="filter-btn" data-filter="new" onclick="setFilter('new')">🆕 New</button>
+        <button class="filter-btn" data-filter="applied" onclick="setFilter('applied')">✅ Applied</button>
+      </div>
+    </section>
+
+    <!-- MAIN DUAL-PANE LAYOUT -->
+    <main class="main-content">
+      <!-- LEFT PANE: JOB FEED LIST -->
+      <section class="job-list-panel">
+        <div class="panel-header">
+          <h2>Daily Discovered Jobs (Max 10/day)</h2>
+          <span class="badge" id="listCountBadge">0 Jobs</span>
+        </div>
+        <div class="job-card-list" id="jobCardList">
+          <!-- Dynamically populated -->
+        </div>
+      </section>
+
+      <!-- RIGHT PANE: DETAILED INSPECTION & MATERIALS WORKSPACE -->
+      <section class="job-detail-panel" id="jobDetailPanel">
+        <div class="empty-detail-state" id="emptyDetailState">
+          <div class="empty-icon">📂</div>
+          <h3>Select a Job to Inspect</h3>
+          <p>View rubric score breakdown, tailored LaTeX resume diff, personalized cover letter, and astrological timing strategy.</p>
+        </div>
+
+        <div class="detail-content" id="detailContent" style="display: none;">
+          <!-- DETAIL HEADER -->
+          <div class="detail-header">
+            <div>
+              <span class="company-tag" id="detailCompany">Company Name</span>
+              <h2 id="detailTitle">Job Title</h2>
+              <div class="detail-meta">
+                <span id="detailLocation">📍 Remote</span>
+                <span id="detailDate">📅 2026-09-27</span>
+                <a id="detailLink" href="#" target="_blank" class="external-link">🔗 View Job Source</a>
+              </div>
+            </div>
+            <div class="detail-score-box">
+              <div class="score-circle" id="detailScoreCircle">
+                <span class="score-val" id="detailTotalScore">--</span>
+                <span class="score-max">/100</span>
+              </div>
+              <span class="rec-badge" id="detailRec">High Fit</span>
+            </div>
+          </div>
+
+          <!-- APPLICATION STATUS TOGGLE -->
+          <div class="status-action-banner">
+            <span class="status-label">Application Status:</span>
+            <div class="status-toggle-group">
+              <button class="status-btn" data-status="new" onclick="updateJobStatus('new')">New</button>
+              <button class="status-btn" data-status="applied" onclick="updateJobStatus('applied')">Applied</button>
+              <button class="status-btn" data-status="interview" onclick="updateJobStatus('interview')">Interviewing</button>
+              <button class="status-btn" data-status="rejected" onclick="updateJobStatus('rejected')">Archived</button>
+            </div>
+          </div>
+
+          <!-- WORKSPACE TABS -->
+          <div class="tab-navigation">
+            <button class="tab-btn active" onclick="switchTab('score')">⚖️ Match Rubric & Astro</button>
+            <button class="tab-btn" onclick="switchTab('resume')">📄 Tailored LaTeX Resume</button>
+            <button class="tab-btn" onclick="switchTab('cover')">✉️ Cover Letter</button>
+            <button class="tab-btn" onclick="switchTab('jd')">📋 Raw Job Description</button>
+          </div>
+
+          <!-- TAB 1: SCORE RUBRIC & ASTROLOGICAL STRATEGY -->
+          <div class="tab-pane active" id="tab-score">
+            <div class="rubric-grid">
+              <div class="rubric-card">
+                <div class="rubric-header">
+                  <span>💻 Technical Match</span>
+                  <span class="rubric-num" id="rubricTech">0/40</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" id="progTech" style="width: 0%"></div></div>
+                <p class="rubric-desc" id="rubricTechDesc">--</p>
+              </div>
+
+              <div class="rubric-card">
+                <div class="rubric-header">
+                  <span>🏆 Experience & Domain Match</span>
+                  <span class="rubric-num" id="rubricExp">0/30</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" id="progExp" style="width: 0%"></div></div>
+                <p class="rubric-desc" id="rubricExpDesc">--</p>
+              </div>
+
+              <div class="rubric-card">
+                <div class="rubric-header">
+                  <span>🪐 Astrological & Intuitive Synergy</span>
+                  <span class="rubric-num" id="rubricAstro">0/30</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" id="progAstro" style="width: 0%"></div></div>
+                <p class="rubric-desc" id="rubricAstroDesc">--</p>
+              </div>
+            </div>
+
+            <div class="astro-callout">
+              <div class="callout-title">🪐 Astrological Strategic Advice</div>
+              <div class="callout-body" id="astroNotesText">--</div>
+            </div>
+          </div>
+
+          <!-- TAB 2: TAILORED LATEX RESUME -->
+          <div class="tab-pane" id="tab-resume">
+            <div class="code-toolbar">
+              <span class="code-badge">Standard Compliant LaTeX (Grounded in Profile)</span>
+              <div class="toolbar-btns">
+                <button class="btn btn-sm" onclick="copyLatexCode()">📋 Copy LaTeX</button>
+                <button class="btn btn-sm btn-primary" onclick="downloadLatexFile()">📥 Download .tex</button>
+              </div>
+            </div>
+            <pre class="code-display"><code id="latexCodeDisplay">--</code></pre>
+          </div>
+
+          <!-- TAB 3: COVER LETTER -->
+          <div class="tab-pane" id="tab-cover">
+            <div class="code-toolbar">
+              <span class="code-badge">Personalized Cover Letter</span>
+              <div class="toolbar-btns">
+                <button class="btn btn-sm" onclick="copyCoverLetter()">📋 Copy Letter</button>
+              </div>
+            </div>
+            <div class="cover-letter-paper" id="coverLetterDisplay">--</div>
+          </div>
+
+          <!-- TAB 4: RAW JD -->
+          <div class="tab-pane" id="tab-jd">
+            <div class="jd-box" id="jdTextDisplay">--</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast">Message</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+{
+  "personal_info": {
+    "full_name": "Kshitij Ashok Sawarkar",
+    "email": "kshitij.sawarkar@example.com",
+    "location": "Tumsar, Bhandara, Maharashtra, India",
+    "links": {
+      "ai_mentor": "https://chatgpt.com/g/g-69627bdb00488191b0424bfcdc202c6c-ai-mentor-by-kshitij",
+      "smart_data_cleaner": "https://kshitijsawarkar.github.io/Smart_Excel_Cleaner/",
+      "ieee_paper": "IEEE Xplore Doc #10627276"
+    }
+  },
+  "education": [
+    {
+      "degree": "M.Tech in Control and Instrumentation",
+      "institution": "MNNIT Allahabad",
+      "duration": "2025 – Present",
+      "status": "Pursuing"
+    },
+    {
+      "degree": "B.Tech in Electronics and Communication Engineering",
+      "institution": "RCOEM Nagpur",
+      "duration": "2020 – 2024",
+      "status": "Completed"
+    }
+  ],
+  "experience": [
+    {
+      "company": "AICTE (Virtual Internship)",
+      "role": "AWS Cloud Intern / AI Developer",
+      "duration": "May 2023 - Jul 2023",
+      "domain": "Cloud Infrastructure & Machine Learning Operations (ML-Ops)",
+      "problem_statement": "Moving AI and data applications from local environments to the cloud to ensure high availability, scalability, and automated model deployment.",
+      "tools_concepts": ["EC2", "Lambda", "SageMaker", "S3", "Security Groups", "Instance Scaling", "ML-Ops"],
+      "algorithms_logic": [
+        "Utilized Lambda functions to execute code in response to data uploads in S3.",
+        "Managed EC2 instances for persistent hosting of data-heavy applications.",
+        "Explored SageMaker built-in algorithms (Linear Learner, XGBoost) for scalable predictive modeling."
+      ]
+    },
+    {
+      "company": "UCN Cable Networks",
+      "role": "Networking Intern",
+      "duration": "Mar 2023 - Apr 2023",
+      "domain": "Networking & Infrastructure Support",
+      "problem_statement": "Inefficient network routing and hardware misconfigurations led to connectivity downtime and security vulnerabilities within the local area network.",
+      "tools_concepts": ["Cisco Packet Tracer", "IP Addressing", "Subnetting", "LAN Setup", "Network Security", "Hardware Troubleshooting"],
+      "algorithms_logic": [
+        "Applied subnetting algorithms to optimize IP address allocation and configured routing protocols to ensure low-latency data transmission."
+      ]
+    },
+    {
+      "company": "RCOEM TBI Foundation Cell (Incubation Center)",
+      "role": "Student Developer / Technical Intern",
+      "duration": "Jan 2021 - Feb 2022",
+      "domain": "Software Development & Industrial Automation",
+      "problem_statement": "Early-stage startups (including Mechelp Pvt Ltd and Sharun Innovations) faced technical hurdles in automating routine operational tasks and debugging internal product prototypes.",
+      "tools_concepts": ["Software Lifecycle Management", "System Testing", "Debugging", "Product Prototyping", "Resource Support"],
+      "algorithms_logic": [
+        "Developed logic for internal automation scripts and utilized systematic debugging algorithms to identify and resolve software bottlenecks during the prototyping phase."
+      ],
+      "impact": "Directly supported partner programs by improving the reliability of internal technical products, ensuring they met strict productivity goals and quality standards for launch."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Taxi Fare Prediction",
+      "category": "Machine Learning",
+      "tools": ["TensorFlow", "Keras", "Pandas", "Linear Regression"],
+      "description": "Built a robust predictive model using the Chicago Taxi dataset, performing extensive data preprocessing and hyperparameter tuning to optimize model convergence and reduce RMSE."
+    },
+    {
+      "name": "AI Mentor",
+      "category": "Generative AI & LLM Systems",
+      "tools": ["Agentic AI", "Prompt Engineering", "Custom GPT", "Contextual Optimization"],
+      "description": "Engineered an intelligent Agentic AI assistant providing high-context mentorship, resume optimization, and interview preparation with strict personas and knowledge retrieval boundaries.",
+      "link": "https://chatgpt.com/g/g-69627bdb00488191b0424bfcdc202c6c-ai-mentor-by-kshitij"
+    },
+    {
+      "name": "TrendGuard-200: Multi-Asset Risk Engine",
+      "category": "Quantitative Finance & Algorithmic Trading",
+      "tools": ["Python", "NumPy", "Vectorized Signal Factory", "200-day SMA"],
+      "description": "Engineered a high-performance backtesting framework to evaluate trend-following strategies across an 8-year horizon. Reduced computational latency by 90% and achieved a 72.7% win rate on high-conviction assets with <30% max drawdown during major shocks."
+    },
+    {
+      "name": "Gas Detection System",
+      "category": "Embedded Systems & IoT",
+      "tools": ["Arduino Uno", "MQ-2 Gas Sensor", "Embedded C/C++", "Wokwi Simulation"],
+      "description": "Designed and simulated a responsive hardware-software system for continuous environmental monitoring and autonomous alerting with safety threshold triggers."
+    },
+    {
+      "name": "Job Tracker Application",
+      "category": "Web Application & Productivity",
+      "tools": ["Lovable.ai", "Relational Data Structure", "UI/UX Prototyping"],
+      "description": "Engineered a structured web application centralizing application statuses, company data, and follow-up timelines in one dashboard with real-time status management."
+    },
+    {
+      "name": "Smart Shopping Cart",
+      "category": "Computer Vision & Research",
+      "tools": ["Raspberry Pi", "YOLOv5", "Computer Vision", "Python"],
+      "description": "Automated AI-powered billing system with real-time item detection in a shopping cart. Published research in IEEE Xplore (Doc #10627276)."
+    },
+    {
+      "name": "Sales Data Analysis",
+      "category": "Data Analytics & BI",
+      "tools": ["Power BI", "Ecommerce Sales Data", "Data Visualization"],
+      "description": "Analyzed ecommerce sales data and created an interactive sales dashboard using Power BI."
+    },
+    {
+      "name": "Sun Tracking Solar Panel",
+      "category": "Embedded & Renewable Energy",
+      "tools": ["Arduino Nano", "Microcontrollers", "Hardware-Software Integration"],
+      "description": "Engineered a tracking system using Arduino Nano leveraging solar panels as sensors to adjust movement, achieving a 20% increase in energy yield."
+    },
+    {
+      "name": "Smart Data Cleaner",
+      "category": "AI Web Application & Data Tools",
+      "tools": ["Windsurf", "AI Data Preprocessing", "Web App"],
+      "description": "AI-powered Excel data cleaning tool automating duplicate removal, missing value handling, format correction, and dataset organization.",
+      "link": "https://kshitijsawarkar.github.io/Smart_Excel_Cleaner/"
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "C/C++", "SQL", "LaTeX"],
+    "machine_learning_and_ai": ["TensorFlow", "Keras", "YOLOv5", "SageMaker", "XGBoost", "Prompt Engineering", "Agentic Workflows"],
+    "cloud_and_devops": ["AWS (EC2, Lambda, S3)", "ML-Ops", "Cloud Architecture"],
+    "hardware_and_embedded": ["Arduino Uno/Nano", "Raspberry Pi", "Sensors (MQ-2)", "Wokwi", "Microcontrollers", "Control & Instrumentation"],
+    "networking_and_data": ["Cisco Packet Tracer", "Subnetting", "IP Addressing", "Pandas", "NumPy", "Power BI"]
+  }
+}

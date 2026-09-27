@@ -1,0 +1,72 @@
+Experience:
+1). Company: AICTE (Virtual Internship)  — May 2023 - Jul 2023
+Domain: Cloud Infrastructure & Machine Learning Operations (ML-Ops) 
+Problem Statement: Moving AI and data applications from local environments to the cloud to ensure high availability, scalability, and automated model deployment. 
+Tools & Concepts: * EC2 (Elastic Compute Cloud): Virtual server management, instance scaling, and security group configuration. 
+Lambda: Event-driven serverless functions for automating data pipelines and API triggers. 
+SageMaker: End-to-end Machine Learning lifecycle, including data labeling, model training, and hosting endpoints.
+Algorithms & Logic: * Utilized Lambda functions to execute code in response to data uploads in S3. 
+Managed EC2 instances for persistent hosting of data-heavy applications. 
+Explored SageMaker's built-in algorithms (like Linear Learner or XGBoost) for scalable predictive modeling.
+Exact Role: AWS Cloud Intern / AI Developer 
+2). Company: UCN Cable Networks   – Mar 2023 - Apr 2023
+Domain: Networking & Infrastructure Support 
+Problem Statement: Inefficient network routing and hardware misconfigurations led to connectivity downtime and security vulnerabilities within the local area network.
+Tools & Concepts: Cisco Packet Tracer, IP Addressing, Subnetting, LAN Setup, Network Security, Hardware Troubleshooting.
+Algorithms & Logic: Applied subnetting algorithms to optimize IP address allocation and configured routing protocols to ensure low-latency data transmission.
+Exact Role: Networking Intern 
+3). Company: RCOEM TBI Foundation Cell (Incubation Center)  – Jan 2021 - Feb 2022
+Domain: Software Development & Industrial Automation 
+Problem Statement: Early-stage startups (including Mechelp Pvt Ltd and Sharun Innovations) faced technical hurdles in automating routine operational tasks and debugging internal product prototypes.
+Tools & Concepts: Software Lifecycle Management, System Testing, Debugging, Product Prototyping, Resource Support.
+Algorithms & Logic: Developed logic for internal automation scripts and utilized systematic debugging algorithms to identify and resolve software bottlenecks during the prototyping phase.
+Exact Role: Student Developer / Technical Intern 
+Impact: Directly supported partner programs by improving the reliability of internal technical products, ensuring they met strict productivity goals and quality standards for launch.
+Project::
+1). Taxi Fare Prediction:
+Situation: Predicting taxi fares accurately requires processing complex, multi-variable datasets with high variance.
+Task: Build a robust predictive model using the Chicago Taxi dataset.
+Action: I have implemented a Linear Regression model using TensorFlow and Keras, performing extensive data preprocessing with Pandas and hyperparameter tuning.
+Result: Successfully optimized model convergence, significantly reducing the Root Mean Square Error (RMSE) for fare estimations.
+2). AI Mentor
+Situation: Traditional career guidance is often generic and lacks the immediate, data-driven feedback required for fast-paced technical fields like Electronics and Data Engineering. 
+Task: To engineer an intelligent Agentic AI assistant capable of providing high-context mentorship, resume optimization, and interview preparation. 
+Action: Leveraging Advanced Prompt Engineering and Contextual Optimization, I designed a custom GPT architecture. I focused on defining strict personas and knowledge-retrieval boundaries to ensure the output is both accurate and professionally aligned. 
+Result: Launched a functional AI Mentor that provides instantaneous, tailored career roadmaps. This project demonstrates the practical application of LLMs in solving human-centric challenges through automated intelligent workflows.
+🔗 Try it here:
+https://chatgpt.com/g/g-69627bdb00488191b0424bfcdc202c6c-ai-mentor-by-kshitij
+3). TrendGuard-200: Multi-Asset Risk Engine
+Situation: Iterative processing of large-scale financial data (OHLC) often leads to high computational latency, hindering rapid strategy testing.
+Task: Engineer a high-performance backtesting framework to evaluate trend-following strategies across an 8-year horizon.
+Action: I have developed a Vectorized Signal Factory using NumPy and implemented an Institutional Regime Filter (200-day SMA) to mitigate "whipsaw" losses.
+Result: Reduced computational latency by 90% and achieved a 72.7% win rate on high-conviction assets while maintaining a Max Drawdown below 30% during major market shocks like COVID-2020.
+4). Gas Detection System
+Situation: Manual monitoring of air quality or gas leaks is inefficient and poses significant safety risks in confined or industrial spaces.
+Task: To design and simulate a responsive hardware-software system capable of continuous environmental monitoring and autonomous alerting.
+Action: I have developed the system architecture using an Arduino Uno integrated with an MQ-2 gas sensor. The project involved writing embedded C/C++ logic to process analog sensor data, define safety thresholds, and trigger visual/auditory alerts. He also utilized the Wokwi platform for high-fidelity simulation and logic verification.
+Result: Successfully deployed a functional simulation that monitors gas levels with high precision, demonstrating a mastery of sensor integration, real-time data processing, and embedded systems design.
+5). Job Tracker Application
+Situation: Job seekers often struggle with "application fatigue" and data fragmentation when tracking dozens of active opportunities across various platforms.
+Task: To engineer a structured, user-friendly web application that centralizes application statuses, company data, and follow-up timelines in one dashboard.
+Action: Utilizing Lovable.ai, he practiced rapid prototyping and AI-powered development to build a relational data structure. He focused on creating a seamless UI/UX that allows for real-time status updates (Applied, Interviewing, Rejected) and organized data entry.
+Result: Successfully deployed a functional web tool that reduces administrative overhead for candidates, demonstrating a practical mastery of AI-enabled application development and data management principles.
+6). Smart Shopping Cart
+Smart Shopping Cart (Research Project) 
+Situation: Traditional retail checkout processes are often slow and manual, leading to customer dissatisfaction.
+Task: Develop an automated, AI-powered billing system capable of real-time item detection within a shopping cart.
+Action: We have utilized Raspberry Pi and YOLO V5 to build a computer vision pipeline, which involved custom data acquisition, annotation, and preprocessing.
+Result: Successfully published the research in IEEE Xplore (Doc #10627276), demonstrating a functional prototype that automates the product detection and billing lifecycle.
+7). Sales Data Analysis
+1. Analyst Ecommerce Sales Data
+2. Created an interactive sales dashboard using Power Bi
+8). Sun Tracking Solar Panel 
+Situation: Static solar panels lose significant energy potential as the sun moves throughout the day.
+Task: Design a hardware-software system to maximize solar energy absorption.
+Action: He engineered a tracking system using an Arduino Nano, leveraging solar panels themselves as sensors to detect light intensity and adjust movement.
+Result: Achieved a 20% increase in energy yield compared to stationary setups.
+Skills: Electronics, Microcontrollers, +3 skills   
+8).Smart Data CleanerDeveloped an AI-powered Excel data cleaning tool, Smart Data Cleaner, using Windsurf. The application automates data preprocessing tasks such as removing duplicates, handling missing values, correcting formatting inconsistencies, and organizing datasets within seconds. Designed to improve data accuracy and productivity, the tool significantly reduces manual effort and speeds up spreadsheet preparation for analysis and reporting.
+Link: https://kshitijsawarkar.github.io/Smart_Excel_Cleaner/ 
+Education::
+M.Tech in Control and Instrumentation | MNNIT Allahabad | 2025 – Present 
+B.Tech in Electronics and Communication Engineering | RCOEM Nagpur | 2020 – 2024
