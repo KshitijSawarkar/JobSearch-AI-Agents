@@ -238,6 +238,14 @@ function copyCoverLetter() {
 }
 
 async function triggerRunPipeline() {
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+  if (!isLocal) {
+    // Show Cloud Agent Modal
+    document.getElementById('runModal').style.display = 'flex';
+    return;
+  }
+
   const btn = document.getElementById('btnRunPipeline');
   btn.disabled = true;
   btn.innerHTML = `<span class="btn-icon">⏳</span> Running Agents...`;
@@ -249,16 +257,19 @@ async function triggerRunPipeline() {
       showToast('🎉 Agents finished! Reloading jobs...');
       await loadJobsData();
     } else {
-      showToast('⚠️ Ran locally. Re-reading database...');
+      showToast('ℹ️ Local execution finished.');
       await loadJobsData();
     }
   } catch (e) {
-    showToast('ℹ️ Pipeline triggered on backend.');
-    await loadJobsData();
+    document.getElementById('runModal').style.display = 'flex';
   } finally {
     btn.disabled = false;
     btn.innerHTML = `<span class="btn-icon">⚡</span> Run Daily Agents`;
   }
+}
+
+function closeRunModal() {
+  document.getElementById('runModal').style.display = 'none';
 }
 
 function showToast(msg) {

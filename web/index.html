@@ -22,6 +22,35 @@
     </div>
   </div>
 
+  <!-- CLOUD AGENT TRIGGER MODAL -->
+  <div id="runModal" class="auth-overlay" style="display: none;">
+    <div class="auth-card" style="max-width: 480px; text-align: left;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+        <h2 style="font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span>⚡</span> Cloud Agent Execution
+        </h2>
+        <button onclick="closeRunModal()" style="background: none; border: none; color: var(--text-muted); font-size: 1.3rem; cursor: pointer;">&times;</button>
+      </div>
+      <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+        Your agents run <strong>autonomously in the cloud every day at 9:00 AM IST</strong> to discover, score, and tailor 10 fresh jobs with your Gemini API key.
+      </p>
+
+      <div style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.25); border-radius: 8px; padding: 0.9rem; font-size: 0.85rem; margin: 0.5rem 0;">
+        <div style="color: #a5b4fc; font-weight: 600; margin-bottom: 0.3rem;">🚀 Instant On-Demand Run:</div>
+        <p style="color: #e2e8f0; font-size: 0.8rem; margin: 0;">You can trigger a fresh search right now directly on GitHub Actions:</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;">
+        <a href="https://github.com/KshitijSawarkar/JobSearch-AI-Agents/actions/workflows/daily_agent_run.yml" target="_blank" class="btn btn-primary" style="justify-content: center; text-decoration: none;">
+          ⚡ Launch Cloud Agent Run (GitHub Actions)
+        </a>
+        <button class="btn" onclick="loadJobsData(); closeRunModal();" style="justify-content: center;">
+          🔄 Refresh Dashboard Data
+        </button>
+      </div>
+    </div>
+  </div>
+
   <div class="app-container">
     <!-- TOP NAVBAR -->
     <header class="navbar">
