@@ -4,6 +4,9 @@ on:
   schedule:
     # Runs daily at 03:30 UTC (9:00 AM IST)
     - cron: '30 3 * * *'
+  push:
+    branches:
+      - main
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 permissions:
