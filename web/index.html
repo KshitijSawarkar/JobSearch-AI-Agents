@@ -10,18 +10,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- PRIVATE PASSCODE MODAL (OPTIONAL INSTANT LOCK) -->
-  <div id="authOverlay" class="auth-overlay" style="display: none;">
-    <div class="auth-card">
-      <div class="auth-icon">🔒</div>
-      <h2>Private JobSearch Portal</h2>
-      <p>Enter your private passcode to unlock dashboard</p>
-      <input type="password" id="passcodeInput" placeholder="Enter PIN / Passcode" />
-      <button class="btn btn-primary" onclick="verifyPasscode()">Unlock Dashboard</button>
-      <div id="authError" class="auth-error" style="display: none;">Incorrect Passcode</div>
-    </div>
-  </div>
-
   <div class="app-container">
     <!-- TOP NAVBAR -->
     <header class="navbar">

@@ -1,36 +1,11 @@
-// Master passcode configuration (Default: 7777)
-const DEFAULT_PASSCODE = "7777";
+let allJobs = [];
+let currentJobId = null;
+let currentFilter = 'all';
 
 // Initialize on DOM load
 document.addEventListener('DOMContentLoaded', () => {
-  checkAuth();
+  loadJobsData();
 });
-
-function checkAuth() {
-  const isUnlocked = localStorage.getItem('portal_unlocked') === 'true';
-  const overlay = document.getElementById('authOverlay');
-  if (!isUnlocked) {
-    overlay.style.display = 'flex';
-  } else {
-    overlay.style.display = 'none';
-    loadJobsData();
-  }
-}
-
-function verifyPasscode() {
-  const input = document.getElementById('passcodeInput').value;
-  const customPin = localStorage.getItem('custom_pin') || DEFAULT_PASSCODE;
-  const errorEl = document.getElementById('authError');
-
-  if (input === customPin || input === DEFAULT_PASSCODE) {
-    localStorage.setItem('portal_unlocked', 'true');
-    document.getElementById('authOverlay').style.display = 'none';
-    errorEl.style.display = 'none';
-    loadJobsData();
-  } else {
-    errorEl.style.display = 'block';
-  }
-}
 
 async function loadJobsData() {
   try {
